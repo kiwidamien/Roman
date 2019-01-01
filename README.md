@@ -10,3 +10,10 @@ The answer: Roman Numerals!
 ## Purpose
 
 This is a "hello world" example of how to create a Python package.
+
+## Useful references
+
+- [This useful article on creating your first Python package](https://medium.com/38th-street-studios/creating-your-first-python-package-181c5e31f3f8)
+- [The tox documentation](https://tox.readthedocs.io/en/latest/)
+- [The Python code on Project structure](https://docs.python-guide.org/writing/structure/)
+
