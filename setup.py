@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="convert",
+    name="roman",
     version="0.1.0",
     url="https://github.com/kiwidamien/roman",
     author="Damien Martin",
