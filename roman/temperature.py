@@ -49,7 +49,8 @@ _CONVERSIONS = {
 
 
 def convert_all(temp, unit, allow_neg_abs=False):
-    """Converts temp expressed in unit to Kelvin, Fahrenheit, and Celsius
+    """Convert temp expressed in unit to Kelvin, Fahrenheit, and Celsius.
+
     Args:
         temp (numeric): the numeric value of the temperature.
         unit (string): one of 'K', 'F', or 'C' to express if temp is given in
@@ -78,8 +79,8 @@ def convert_all(temp, unit, allow_neg_abs=False):
 
 
 def convert(temp, from_unit, to_unit):
-    """Converts temp expressed in from_unit to the numeric value expressed in
-    to_unit.
+    """Convert temp from from_unit to the numeric value expressed in to_unit.
+
     Args:
         temp (numeric): the numeric value of the temperature in from_unit.
         from_unit (string): one of 'K', 'F', or 'C' to express if temp is given
