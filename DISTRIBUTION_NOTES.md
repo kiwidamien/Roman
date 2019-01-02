@@ -1,4 +1,7 @@
 ```bash
+# make sure twine is installed
+$ pip install twine
+
 # can install on your own system
 $ python setup.py install
 
@@ -16,3 +19,4 @@ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 # Now install from pip (uninstall first if you installed locally)
 # This is more complicated because we are using testpypi =)
 $ pip install --extra-index-url https://testpypi.python.org/simple roman
+```
