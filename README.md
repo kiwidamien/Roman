@@ -11,7 +11,7 @@ The answer: Roman Numerals!
 ## Purpose
 
 This is a "hello world" example of how to create a Python package. It does so by going through the process of creating a package (`roman`) that
-- converts between roman numeral strings and integers
+- converting between roman numeral strings and integers
 - converting between temperatures
 
 This guide has been broken into several tags, so that the process can be followed. You can access different tag, clone this repo and use
