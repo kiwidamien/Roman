@@ -23,15 +23,15 @@ git checkout tags/<tag name>
 
 A series of [blog posts](https://kiwidamien.github.io/making-a-python-package.html) walks through the process of creating a package from start to finish. The tags made available are
 
-1. (v0.1: the idea)[/tree/v0.1] 
+1. [v0.1: the idea](/tree/v0.1) 
   We write the Roman numerals function, write a short module, and can import it from one directory.
-2. (v0.2: documentation)[/tree/v0.2]
+2. [v0.2: documentation](/tree/v0.2)
   We write the docstrings of the function, and show best practices.
-3. (v0.3: make a package)[/tree/v0.3]  
+3. [v0.3: make a package](/tree/v0.3)  
   We write setup.py, and show how to install on our own system. We can also show how to install from github. 
-4. (v0.4: writing tests)[/tree/v0.4]
+4. [v0.4: writing tests](/tree/v0.4)
   We write some unit tests, and introduce the `tox` package to allow easy testing.
-5. (v0.5: deploying)[/tree/v0.5]
+5. [v0.5: deploying](/tree/v0.5)
   We use (twine)[https://pypi.org/project/twine/] to post onto TestPyPI. 
 
 ## Installation
