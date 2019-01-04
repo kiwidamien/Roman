@@ -17,7 +17,12 @@ _ROMAN_ALL_SYMBOLS = ''.join([p + m for p, m in zip(_ROMAN_POWERS_TEN,
 
 
 def _contains_replacable(numeral_string):
+<<<<<<< HEAD
     """Raise ValueError if numeral_string is reducible.
+=======
+    """
+    Check if numeral_string contains reducible substrings.
+>>>>>>> master
 
     Here are some simplifible rules. We will use I for powers of 10, and V for
     non-powers of 10:
@@ -42,7 +47,11 @@ def _contains_replacable(numeral_string):
 
 
 def _check_all_characters_legal(numeral_string):
+<<<<<<< HEAD
     """Raise ValueError if numeral_string contains character not in MDCLXVI."""
+=======
+    """Raise a ValueError if numeral_string has characters not in MDCLXVI."""
+>>>>>>> master
     illegal_chars = set(numeral_string) - set(_ROMAN_POWERS_TEN +
                                               _ROMAN_MID_POWERS)
     if len(illegal_chars):
@@ -51,7 +60,12 @@ def _check_all_characters_legal(numeral_string):
 
 
 def _check_for_illegal_combos(numeral_string):
+<<<<<<< HEAD
     """Raise a ValueError if numeral_string contains an illegal combination.
+=======
+    """
+    Raise a ValueError if numeral_string contains an illegal combination.
+>>>>>>> master
 
     An illegal combination is any string where:
         - A digit with a smaller value appears before a larger value, with the

@@ -7,7 +7,7 @@ setuptools.setup(
     author="Damien Martin",
     author_email="damien.j.martin@gmail.com",
     description="Allows conversion of Roman numerals to ints (and vice versa)",
-    long_description=open('README.md').read(),
+    long_description=open('DESCRIPTION.rst').read(),
     packages=setuptools.find_packages(),
     install_requires=[],
     classifiers=[
