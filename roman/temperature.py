@@ -51,23 +51,35 @@ _CONVERSIONS = {
 def convert_all(temp, unit, allow_neg_abs=False):
     """Convert temp expressed in unit to Kelvin, Fahrenheit, and Celsius.
 
+<<<<<<< HEAD
+    Args
+    ----
+=======
     Args:
+>>>>>>> master
         temp (numeric): the numeric value of the temperature.
         unit (string): one of 'K', 'F', or 'C' to express if temp is given in
                        Kelvin, Farenheit, or Celsius respectively.
         allow_neg_abs: set to True to allow temperatures below absolute zero.
-    Returns:
+
+    Returns
+    -------
         A dictionary with keys representing the unit, and values representing
         the temperature in that unit.
-    Examples:
+
+    Examples
+    --------
         >>> convert_all(0, 'C')
         {'K': 273.15, 'F': 32.0, 'C': 0}
         >>> convert_all(212, 'F')
         {'K': 373.15, 'F': 212, 'C': 100}
-    Raises:
+
+    Raises
+    ------
         KeyError: If unit is not one of 'K', 'F', or 'C'
         ValueError: If the temperature is below absolute zero, and
                     allow_neg_abs is False
+
     """
     values = {new_unit: _CONVERSIONS[(unit, new_unit)](temp) for new_unit in
               UNITS}
@@ -79,17 +91,28 @@ def convert_all(temp, unit, allow_neg_abs=False):
 
 
 def convert(temp, from_unit, to_unit):
+<<<<<<< HEAD
+    """Convert temp expressed in from_unit to value expressed in to_unit.
+
+    Args
+    ----
+=======
     """Convert temp from from_unit to the numeric value expressed in to_unit.
 
     Args:
+>>>>>>> master
         temp (numeric): the numeric value of the temperature in from_unit.
         from_unit (string): one of 'K', 'F', or 'C' to express if temp is given
                             in Kelvin, Farenheit, or Celsius respectively.
         to_unit (string): one of 'K', 'F', or 'C' to express the unit to
                           convert the temperature in to.
-    Returns:
+
+    Returns
+    -------
         The numeric value of the temperature in to_unit
-    Examples:
+
+    Examples
+    --------
         # convert 0C into F
         >>> convert(0, 'C', 'F')
         32
@@ -99,7 +122,10 @@ def convert(temp, from_unit, to_unit):
         # there is one temp where C and F have same numeric value
         >>> convert(-40, 'F', 'C')
         -40
-    Raises:
+
+    Raises
+    ------
         KeyError: If either from_unit or to_unit are not 'K', 'F', or 'C'
+
     """
     return _CONVERSIONS[(from_unit, to_unit)](temp)

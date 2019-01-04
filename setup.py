@@ -10,10 +10,11 @@ setuptools.setup(
     long_description=open('DESCRIPTION.rst').read(),
     packages=setuptools.find_packages(),
     install_requires=[],
-    include_package_data=True,
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
     ],
+    include_package_data=True,
+    package_data={'': ['data/*.csv']},
 )

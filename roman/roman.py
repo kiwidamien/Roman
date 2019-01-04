@@ -17,8 +17,12 @@ _ROMAN_ALL_SYMBOLS = ''.join([p + m for p, m in zip(_ROMAN_POWERS_TEN,
 
 
 def _contains_replacable(numeral_string):
+<<<<<<< HEAD
+    """Raise ValueError if numeral_string is reducible.
+=======
     """
     Check if numeral_string contains reducible substrings.
+>>>>>>> master
 
     Here are some simplifible rules. We will use I for powers of 10, and V for
     non-powers of 10:
@@ -43,7 +47,11 @@ def _contains_replacable(numeral_string):
 
 
 def _check_all_characters_legal(numeral_string):
+<<<<<<< HEAD
+    """Raise ValueError if numeral_string contains character not in MDCLXVI."""
+=======
     """Raise a ValueError if numeral_string has characters not in MDCLXVI."""
+>>>>>>> master
     illegal_chars = set(numeral_string) - set(_ROMAN_POWERS_TEN +
                                               _ROMAN_MID_POWERS)
     if len(illegal_chars):
@@ -52,8 +60,12 @@ def _check_all_characters_legal(numeral_string):
 
 
 def _check_for_illegal_combos(numeral_string):
+<<<<<<< HEAD
+    """Raise a ValueError if numeral_string contains an illegal combination.
+=======
     """
     Raise a ValueError if numeral_string contains an illegal combination.
+>>>>>>> master
 
     An illegal combination is any string where:
         - A digit with a smaller value appears before a larger value, with the
@@ -99,23 +111,28 @@ def is_valid_roman_numeral(numeral_string):
 def roman_string_to_int(numeral_string):
     """Convert a numeral string representing a roman numeral to an integer.
 
-    Args:
+    Args
+    ----
         numeral_string: represents a valid roman numeral. Must consist only of
                         M, D, C, L, X, V, and I.
 
-    Returns:
+    Returns
+    -------
         An integer.
 
-    Examples:
+    Examples
+    --------
         >>> roman_string_to_int('V')
         5
         >>> roman_string_to_int('MMXIX')
         2019
 
-    Raises:
+    Raises
+    ------
         ValueError: if passed symbols other than MDCLXVI, or passed illegal
                     combinations (e.g. IC), or passed reducible combinations
                     (e.g. LLL)
+
     """
     _validate_string(numeral_string)
     total = 0
@@ -129,21 +146,26 @@ def roman_string_to_int(numeral_string):
 def int_to_roman_string(number):
     """Convert a positive integer into a Roman numeral.
 
-    Args:
+    Args
+    ----
         number: a positive integer to be converted into a roman numeral.
                 Will use integer part if passed a float.
 
-    Returns:
+    Returns
+    -------
         The string representation of number.
 
-    Examples:
+    Examples
+    --------
         >>> int_to_roman_string(5)
         'V'
         >>> int_to_roman_string(2019)
         'MMXIX'
 
-    Raises:
+    Raises
+    ------
         ValueError: if passed a negative number
+
     """
     number = int(number)
     if number < 0:
