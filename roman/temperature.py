@@ -51,12 +51,8 @@ _CONVERSIONS = {
 def convert_all(temp, unit, allow_neg_abs=False):
     """Convert temp expressed in unit to Kelvin, Fahrenheit, and Celsius.
 
-<<<<<<< HEAD
     Args
     ----
-=======
-    Args:
->>>>>>> master
         temp (numeric): the numeric value of the temperature.
         unit (string): one of 'K', 'F', or 'C' to express if temp is given in
                        Kelvin, Farenheit, or Celsius respectively.
@@ -91,16 +87,10 @@ def convert_all(temp, unit, allow_neg_abs=False):
 
 
 def convert(temp, from_unit, to_unit):
-<<<<<<< HEAD
     """Convert temp expressed in from_unit to value expressed in to_unit.
 
     Args
     ----
-=======
-    """Convert temp from from_unit to the numeric value expressed in to_unit.
-
-    Args:
->>>>>>> master
         temp (numeric): the numeric value of the temperature in from_unit.
         from_unit (string): one of 'K', 'F', or 'C' to express if temp is given
                             in Kelvin, Farenheit, or Celsius respectively.
